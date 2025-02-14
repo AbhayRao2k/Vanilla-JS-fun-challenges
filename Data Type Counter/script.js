@@ -5,7 +5,8 @@ let typeCounts = {};
 
 for (let i = 0; i < data.length; i++) {
   let type = typeof data[i];
-
+  
+  // If type already exists increment it, else initialize it to 1
   if (typeCounts[type]) {
     typeCounts[type] += 1;
   } else {
